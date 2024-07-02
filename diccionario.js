@@ -12,8 +12,6 @@
 document.addEventListener("mousedown",(e)=>{
     if(e.button==1&&location.href.includes("chatovod")){
         let word1 = prompt("Introduce tu concepto para extraer su definición.")
-        if(word1=="sobrino"||word1=="sobrina"){
-            alert("Hijo del hermano de una persona.")
-        }
+        location.replace("https://api.dictionaryapi.dev/api/v2/entries/en/"+word1)
     }
 })
