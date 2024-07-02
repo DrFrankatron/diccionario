@@ -1,0 +1,19 @@
+// ==UserScript==
+// @name         Diccionario.
+// @namespace    http://tampermonkey.net/
+// @version      2024-05-18
+// @description  try to take over the world!
+// @author       DrFrankGL (CMV63)
+// @match        */*
+// @icon         https://st1.chatovod.com/widget/i/sm/1/geek.png
+// @grant        none
+// ==/UserScript==
+
+document.addEventListener("mousedown",(e)=>{
+    if(e.button==1){
+        let word1 = prompt("Introduce tu emoji por letras: Hay 'nerdo', 'computadora' y 'bomba'...")
+        if(word1=="sobrino"||word1=="sobrina"){
+            alert("Hijo del hermano de una persona.")
+        }
+    }
+})
